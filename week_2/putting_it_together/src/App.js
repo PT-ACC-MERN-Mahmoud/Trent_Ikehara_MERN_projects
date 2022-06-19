@@ -1,25 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import People from './components/person.js';
+
+const peopleArr = [
+  {
+    firstName: "Trent",
+    lastName: "Ikehara",
+    age: 22,
+    hairColor: "Dark Brown",
+  },
+  {
+    firstName: "Paul",
+    lastName: "Ng",
+    age: 19,
+    hairColor: "Black",
+  },
+  {
+    firstName: "Katie",
+    lastName: "White",
+    age: 50,
+    hairColor: "Light Grey",
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {peopleArr.map((peopleObj, index) => (
+        <People
+          key={index}
+          firstName={peopleObj.firstName}
+          lastName={peopleObj.lastName}
+          age={peopleObj.age}
+          hairColor={peopleObj.hairColor}
+        />
+      ))}
     </div>
   );
 }
 
 export default App;
+

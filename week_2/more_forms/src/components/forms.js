@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 
-const Forms = (p) => {
+const Forms = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");  
+    const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
     
     const createUser = (e) => {
         e.preventDefault();
     
-        const newUser = { 
-            username: username, 
-            email: email, 
-            password: password 
-        };
+        const newUser = { username, email, password };
         console.log("Welcome", newUser);
+    	setUsername("");
+    	setEmail("");
+    	setPassword("");
+        setHasBeenSubmitted(true);
     };
     
     return(
         <form onSubmit={ createUser }>
+            <h3>{}</h3>
             <div>
                 <label>Username: </label> 
                 <input type="text" onChange={ (e) => setUsername(e.target.value) } />

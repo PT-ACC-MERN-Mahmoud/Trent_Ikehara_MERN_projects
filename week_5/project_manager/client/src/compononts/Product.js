@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const newProduct = (props) => {
-    
+const NewProduct = (props) => {
+
     const [name, setName] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
@@ -68,4 +68,4 @@ const newProduct = (props) => {
     );
     };
 
-export default newProduct;
+export default NewProduct;

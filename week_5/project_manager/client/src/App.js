@@ -1,10 +1,10 @@
 import './App.css';
-import newProduct from './compononts/Product';
+import NewProduct from './compononts/Product';
 
 function App() {
   return (
     <div className="App">
-      <newProduct path='/'/>
+      <NewProduct path='/'/>
     </div>
   );
 }

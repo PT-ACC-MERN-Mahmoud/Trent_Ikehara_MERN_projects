@@ -4,7 +4,7 @@ import newProduct from './compononts/Product';
 function App() {
   return (
     <div className="App">
-      <Product path='/'/>
+      <newProduct path='/'/>
     </div>
   );
 }

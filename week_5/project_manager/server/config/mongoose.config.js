@@ -6,7 +6,3 @@ mongoose.connect(`mongodb://localhost/${dbName}`, {
 })
 .then(()=>console.log(`Connected to ${dbName} database!`))
 .catch((err)=>console.log(err));
-
-// mongoose.connect(`mongodb://localhost/${dbName}`)
-//     .then(()=>console.log('connected'))
-//     .catch(e=>console.log(e));

@@ -25,7 +25,7 @@ const Display = (props) => {
                 productList.map((product, index) => (
                     <div key={index}>
                         <Link to={`/product/${product._id}`}>
-                            {product.title}
+                            {product.name}
                         </Link>
                     </div>
                 ))

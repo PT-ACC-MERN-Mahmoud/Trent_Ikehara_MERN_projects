@@ -19,7 +19,7 @@ const OneProduct = (props) => {
     }, [id]); 
     return (
         <div className="oneProduct-component">
-            <h2>{oneProduct.title}</h2>
+            <h2>{oneProduct.name}</h2>
             <p>Price: ${oneProduct.price}</p>
             <p>Description: {oneProduct.description}</p>
         </div>
